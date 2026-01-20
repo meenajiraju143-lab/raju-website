@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Raju | Photo Gallery</title>
+  <title>Raju | Gallery</title>
   <meta charset="UTF-8">
+
   <style>
     body {
-      background: #f2f2f2;
-      font-family: Arial;
+      background: #e9eef3;
+      font-family: "Segoe UI", Arial, sans-serif;
       padding: 20px;
     }
 
     .box {
       background: white;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 25px;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     }
 
-    img {
-      width: 200px;
-      margin: 10px;
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
       border-radius: 10px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 
 <body>
-<div class="box">
 
-<p style="text-align:center;">
-<a href="index.html">Home</a> | 
-<a href="daily.html">Daily Updates</a> | 
-<a href="gallery.html">Gallery</a>
-</p>
-<hr><img src="raju.jpg" width="200" style="border-radius:50%;"><img src="raju1.jpg" width="200" style="border-radius:50%;">
+  <div class="box">
 
-<h1 style="text-align:center;">📸 Photo Gallery</h1>
+    <div class="menu">
+      <a href="index.html">Home</a> | 
+      <a href="daily.html">Daily Updates</a> | 
+      <a href="gallery.html">Gallery</a>
+    </div>
 
-<img src="raju.jpg">
-<!-- Yahan aur photos add kar sakte ho -->
-<!-- <img src="photo2.jpg"> -->
-<!-- <img src="photo3.jpg"> -->
+    <hr>
 
-</div>
+    <h1>🖼️ My Photo Gallery</h1>
+
+    <div class="gallery">
+
+      <!-- 🖼️ Yahan apni photos ke naam likho -->
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+      <img src="photo4.jpg">
+
+    </div>
+
+  </div>
+
 </body>
 </html>
